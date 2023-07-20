@@ -43,26 +43,30 @@ useEffect(() => {
     <div className='App'>
       <div id="logo">
         <img src={Logo} />
-        <h2>MP3 DOWNLOADER</h2>
+        <h2>YouTube-MP3 Downloader</h2>
       </div>
 
       <div id="body">
         <input 
           type="text" 
-          placeholder="YouTube link here"
+          placeholder="Inter YouTube link here"
           value={link}
           onChange={(e) => {
             setLink(e.target.value);     
           }}
           />
-        <span>It might take a moment to convert your video</span>
+        <span>Insert the YouTube video Link or URL and Click the Download button to convert and download the MP3 file.</span>
       </div>
 
       <button
         onClick={() => {
-          const text = link.split("=")[1];
+          const text = link.split("=")[1]; 
           if (text){
             setId(text);
+          }
+          const URL = link.split("e/")[1];
+          if (URL){
+            setId(URL);
           }
         }}
         disabled={disabled}
