@@ -43,7 +43,7 @@ useEffect(() => {
     <div className='App'>
       <div id="logo">
         <img src={Logo} />
-        <h2>YouTube-MP3 Downloader</h2>
+        <h2>YouTube MP3 Converter</h2>
       </div>
 
       <div id="body">
