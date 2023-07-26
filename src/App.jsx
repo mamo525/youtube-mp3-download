@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-import Logo from "./assets/logo.png";
+import Logo from "./assets/ytlogo.png";
 import { fetch } from './services/ApiRequest';
 
 function App() {
